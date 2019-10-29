@@ -1,0 +1,23 @@
+---
+title: "Github Practice"
+author: "Danielle Freshwaters"
+date: "10/29/2019"
+output: html_document
+---
+
+```{r, warning=FALSE, message=FALSE}
+library(tidyverse)
+library(moderndive)
+library(broom)
+library(car)
+```
+
+# Practice Exam Professor Salaries
+
+Distribution of *salary*
+
+```{r}
+Salaries %>% 
+  ggplot()+
+  geom_histogram(aes(x = salary), bins = 40)
+```
