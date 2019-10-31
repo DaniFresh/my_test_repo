@@ -17,6 +17,12 @@ library(car)
 Distribution of *salary*
 
 ```{r}
+2+2
+```
+
+
+
+```{r}
 Salaries %>% 
   ggplot()+
   geom_histogram(aes(x = salary), bins = 40)
